@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayerView" customModule="lifecounter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="R1r-QM-n3W">
+                    <rect key="frame" x="0.0" y="60" width="414" height="786"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="32h-5N-g5P">
+                            <rect key="frame" x="0.0" y="376.5" width="65.5" height="33"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h29-R5-ZfK">
+                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jg2-Ol-gmc">
+                                    <rect key="frame" x="0.0" y="16.5" width="65.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFF-Rw-srC">
+                            <rect key="frame" x="69.5" y="381" width="66" height="24.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="+1" buttonSize="small"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qv-VT-fls">
+                            <rect key="frame" x="139.5" y="381" width="65.5" height="24.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="-1" buttonSize="small"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQp-OI-trh">
+                            <rect key="frame" x="209" y="381" width="65.5" height="24.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="+" buttonSize="small"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98i-bP-2Aw">
+                            <rect key="frame" x="278.5" y="376" width="66" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILt-6k-tdh">
+                            <rect key="frame" x="348.5" y="381" width="65.5" height="24.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="-" buttonSize="small"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="Chu-e2-OrV"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R1r-QM-n3W" secondAttribute="trailing" id="48I-9D-8lW"/>
+                <constraint firstItem="R1r-QM-n3W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gfj-XH-nbq"/>
+                <constraint firstItem="R1r-QM-n3W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="KaV-VJ-pOW"/>
+                <constraint firstItem="R1r-QM-n3W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Mwc-N5-Txz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R1r-QM-n3W" secondAttribute="trailing" id="NBL-9m-vQm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="R1r-QM-n3W" secondAttribute="bottom" constant="16" id="Zv2-jn-hNn"/>
+            </constraints>
+            <connections>
+                <outlet property="btnMinus" destination="ILt-6k-tdh" id="BQL-VQ-aP9"/>
+                <outlet property="btnMinus1" destination="6qv-VT-fls" id="ZYJ-2Q-LT5"/>
+                <outlet property="btnPlus" destination="NQp-OI-trh" id="02g-3r-trs"/>
+                <outlet property="btnPlus1" destination="jFF-Rw-srC" id="YyZ-fG-SnH"/>
+                <outlet property="input" destination="98i-bP-2Aw" id="mJB-bW-UYf"/>
+                <outlet property="lifeLabel" destination="jg2-Ol-gmc" id="Hes-PJ-bqq"/>
+                <outlet property="playerLabel" destination="h29-R5-ZfK" id="F4T-lL-jAy"/>
+            </connections>
+            <point key="canvasLocation" x="-406.875" y="88.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
